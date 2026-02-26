@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
 
   /* ================= PRIMARY ================= */
@@ -25,4 +27,5 @@
   /* ================= TYPOGRAPHY ================= */
   --font-sans: "Josefin Sans", sans-serif;
   --text-base: 18px;
+  --text-sm: 14px;
 }
