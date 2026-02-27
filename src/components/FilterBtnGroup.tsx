@@ -1,7 +1,7 @@
-import { useFilterContext } from "../contexts/context";
+import { useContexts } from "../contexts/context";
 
 function FilterBtnGroup() {
-  const {filter, setFilter} = useFilterContext()
+  const { filter, setFilter } = useContexts();
 
   return (
     <>
