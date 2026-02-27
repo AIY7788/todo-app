@@ -1,6 +1,6 @@
 import IconMoon from "../assets/images/icon-moon.svg?react";
 import IconSun from "../assets/images/icon-sun.svg?react";
-import { useThemeContext } from "../contexts/context";
+import { useThemeContext } from "../contexts/themeContext";
 
 function Header() {
   const { theme, toggleTheme } = useThemeContext();
