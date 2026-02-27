@@ -18,7 +18,11 @@ function Header() {
           id="toggle_theme"
           type="checkbox"
         />
-        <label htmlFor="toggle_theme" className="cursor-pointer overflow-hidden">
+        <label
+          key={theme}
+          htmlFor="toggle_theme"
+          className={`cursor-pointer size-8 flex items-center justify-center animate-[spin_1s_ease-in-out_forwards]`}
+        >
           {theme === "light" ? <IconMoon /> : <IconSun />}
         </label>
       </div>
