@@ -28,7 +28,7 @@ function SortableItem({ item }: {item: Todo}) {
       ref={setNodeRef}
       style={style}
       {...attributes}
-      className="flex items-center gap-4 py-3 px-5 border-b bg-gray-50 dark:bg-navy-900 border-gray-300 dark:border-purple-700 group"
+      className="flex items-center gap-4 py-3 px-5 border-b rounded-t-md bg-gray-50 dark:bg-navy-900 border-gray-300 dark:border-purple-700 group"
     >
       <div className="bg-linear-120 hover:from-check-from hover:to-check-to rounded-full dark:from-purple-700 dark:to-purple-700 p-0.5 transition-colors duration-300 from-purple-300 to-purple-300">
         <button
