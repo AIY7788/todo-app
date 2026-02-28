@@ -35,18 +35,16 @@ export function ContextsProvider({ children }: { children: React.ReactNode }) {
     }
   }, [filter, todos]);
 
-  const value = useMemo(
-    () => ({
-      filter,
-      filteredData,
-      updateStatus,
-      setFilter,
-      addNewTodo,
-      setTodos,
-    }),
-    [filter, filteredData],
-  );
-
+  const value = {
+    filter,
+    todos,
+    filteredData,
+    updateStatus,
+    setFilter,
+    addNewTodo,
+    setTodos,
+  }
+  
   return (
     <Contexts.Provider value={value}>
       {children}

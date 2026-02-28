@@ -4,6 +4,7 @@ export type Filter = "all" | "active" | "completed";
 
 export interface ContextsType {
   filter: Filter;
+  todos: Todo[];
   filteredData: Todo[];
   updateStatus: (id: string, completed: boolean) => void;
   setFilter: React.Dispatch<React.SetStateAction<Filter>>;
