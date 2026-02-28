@@ -19,7 +19,7 @@ function FormInput() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex items-center gap-4 bg-gray-50 dark:bg-navy-900 rounded-md px-5 py-2.5"
+      className="flex items-center gap-4 bg-gray-50 dark:bg-navy-900 rounded-md px-5 py-4"
     >
       <label
         htmlFor="new_todos"

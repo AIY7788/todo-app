@@ -14,7 +14,7 @@ function App() {
   const itemsLeft = todos.filter(i => !i.completed).length;
 
   return (
-    <div className="min-h-screen sm:flex sm:items-center font-sans font-normal text-base py-8 px-4 text-navy-850 bg-gray-300 dark:text-purple-100 dark:bg-navy-950 bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain bg-top sm:bg-[url('./assets/images/bg-desktop-light.jpg')] dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] sm:dark:bg-[url('./assets/images/bg-desktop-dark.jpg')] transition-all duration-300">
+    <div className="min-h-screen sm:flex sm:items-center sm:p-0 font-sans font-normal text-base py-8 px-4 text-navy-850 bg-gray-300 dark:text-purple-100 dark:bg-navy-950 bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain bg-top sm:bg-[url('./assets/images/bg-desktop-light.jpg')] dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] sm:dark:bg-[url('./assets/images/bg-desktop-dark.jpg')] transition-all duration-300">
       <div className="mx-auto sm:min-w-lg">
         <Header />
         <main className="mt-8 flex flex-col gap-4 sm:gap-6 sm:mt-12">
