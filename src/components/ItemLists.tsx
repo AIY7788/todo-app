@@ -44,7 +44,7 @@ function ItemLists() {
         items={filteredData.map((t) => t.id)}
         strategy={verticalListSortingStrategy}
       >
-        <ul className="h-77.5 overflow-y-auto overflow-x-hidden scrollbar-thin scrollbar-track-gray-600 scrollbar-thumb-primary dark:scrollbar-track-purple-700 scrollbar-thumb-rounded-xl scrollbar-track-rounded-2xl scrollbar-hover:cursor-grab">
+        <ul className="h-77.5 overflow-y-auto rounded-t-md overflow-x-hidden scrollbar-thin scrollbar-track-gray-600 scrollbar-thumb-primary dark:scrollbar-track-purple-700 scrollbar-thumb-rounded-xl scrollbar-track-rounded-2xl scrollbar-hover:cursor-grab">
           {filteredData.map((item) => (
             <SortableItem key={item.id} item={item} />
           ))}
