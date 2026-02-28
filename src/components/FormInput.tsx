@@ -31,7 +31,7 @@ function FormInput() {
         onChange={(e) => setValue(e.target.value)}
         value={value}
         placeholder="Create a new todo..."
-        className="outline-none w-[90%] border-none placeholder:text-gray-600 text-lg placeholder:text-sm dark:placeholder:text-purple-600"
+        className="outline-none flex-1 border-none placeholder:text-gray-600 text-lg placeholder:text-sm dark:placeholder:text-purple-600"
       />
     </form>
   );
