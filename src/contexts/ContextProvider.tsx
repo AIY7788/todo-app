@@ -1,11 +1,21 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Contexts } from "./context";
 import type { Filter } from "../types/contexts.type";
 import { todoDB } from "../data/todoLists";
+import type { Todo } from "../types/data.type";
+
+const STORAGE_KEY = "todoDB";
 
 export function ContextsProvider({ children }: { children: React.ReactNode }) {
   const [filter, setFilter] = useState<Filter>("all");
-  const [todos, setTodos] = useState(todoDB);
+  const [todos, setTodos] = useState<Todo[]>(() => {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored ? JSON.parse(stored) : todoDB;
+  });
+
+  useEffect(() => {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(todos));
+  }, [todos]);
 
   const updateStatus = (id: string, completed: boolean) => {
     setTodos((prev) =>
